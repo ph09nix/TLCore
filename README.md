@@ -19,4 +19,4 @@ is_in_channel | check if user is in channel or not (bot should be admin in chann
 msgContains | check if incomming message contains a specific text - get deep command - check if a custom text, contains a specific text
 
 #### support / suggestion = ph09nixom@gmail.com - t.me/ph09nix
-#### Leave a START if you found this usefull :)
+#### Leave a STAR if you found this usefull :)
