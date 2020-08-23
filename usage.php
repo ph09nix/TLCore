@@ -1,7 +1,6 @@
 <?php
 
 use TLCore\Telegram;
-
 {
     #loading framework
     require_once "Telegram.php";
@@ -22,7 +21,13 @@ use TLCore\Telegram;
     } else if ($bot->msgContains("/start")) {
         $dp = $bot->msgContains("/start", true);
         $bot->sendmessage($bot->MSChatID, "this is a deep command , query is `$dp`");
-    } else {
+    }
+    #check if current message is a file
+    else if($bot->ISFile){
+        $bot->sendmessage($bot->MSChatID,$bot->MSFileName);
+        $bot->downloadFile($bot->MSFileID,$bot->MSFileName);
+    }
+     else {
         # close script
         exit();
     }

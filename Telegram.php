@@ -13,7 +13,7 @@ namespace TLCore;
         public $MSChatUSERNAME;
         public $MSId;
         public $MSMessageContent;
-
+        public $ISFile=false;
         public $MSFileID;
         public $MSFileName;
         public $MSFileMim;
@@ -41,6 +41,7 @@ namespace TLCore;
                 if (isset($data->message->text)) {
                     $this->MSMessageContent = $data->message->text;
                 } else if (isset($data->message->document)) {
+                    $this->ISFile=true;
                     $this->MSFileID = $data->message->document->file_id;
                     $this->MSFileMim = $data->message->document->mime_type;
                     $this->MSFileSize = $data->message->document->file_size;
