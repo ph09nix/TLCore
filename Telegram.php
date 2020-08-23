@@ -1,5 +1,5 @@
 <?php
-
+date_default_timezone_set("Asia/Tehran");
 namespace TLCore;
 {
     class Telegram
@@ -56,7 +56,6 @@ namespace TLCore;
 
         public function sendmessage($chatID, $text, $message_id = null, $keyboard = null, $noti = false, $parsemod = "html")
         {
-            date_default_timezone_set("Asia/Tehran");
             $this->sendAction($chatID, "typing");
             return $this->BotInstance('sendMessage', [
                 'chat_id' => $chatID,
