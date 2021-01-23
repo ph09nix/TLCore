@@ -18,6 +18,6 @@ downloadFile | download a file from telegram servers (20MB Max)
 is_in_channel | check if user is in channel or not (bot should be admin in channel)
 msgContains | check if incomming message contains a specific text - get deep command - check if a custom text, contains a specific text
 
-### Donation : 19aXmEGbnsLwBTyDR6RCTBmSoegmNHzC9s
+### Donation : 18eHqWzdCFMs8pNXiHAwvpDMHmToxFLhMP (BTC)
 #### support / suggestion = ph09nixom@gmail.com - t.me/ph09nix
 #### Leave a STAR if you found this usefull :)
